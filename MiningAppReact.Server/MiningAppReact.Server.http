@@ -1,0 +1,6 @@
+@MiningAppReact.Server_HostAddress = http://localhost:5118
+
+GET {{MiningAppReact.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
