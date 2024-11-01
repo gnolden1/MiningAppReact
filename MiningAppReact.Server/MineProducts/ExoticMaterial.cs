@@ -4,6 +4,7 @@ using static MiningAppReact.Server.MineProducts.NonGemstoneExtensions;
 namespace MiningAppReact.Server.MineProducts {
     public static class ExoticMaterials
     {
+#pragma warning disable CA1861 // Avoid constant arrays as arguments
         public static ExoticMaterial Coal { get; } = new()
         {
             Name = "Coal",
@@ -27,6 +28,7 @@ namespace MiningAppReact.Server.MineProducts {
             Values = new int[] { 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 63 }.Select(Currency.FromGold).ToArray(),
             Byproducts = []
         };
+#pragma warning restore CA1861 // Avoid constant arrays as arguments
 
         public static IEnumerable<ExoticMaterial> All
             => [Coal, Petroleum, RadioActiveMaterials];

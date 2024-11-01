@@ -4,6 +4,7 @@ using static MiningAppReact.Server.MineProducts.NonGemstoneExtensions;
 namespace MiningAppReact.Server.MineProducts {
     public static class Stones
     {
+#pragma warning disable CA1861 // Avoid constant arrays as arguments
         public static Stone Basalt { get; } = new()
         {
             Name = "Basalt",
@@ -43,6 +44,7 @@ namespace MiningAppReact.Server.MineProducts {
                 new() { Gemstone = Gemstones.LapisLazuli, LowerBound = 51, UpperBound = 91 },
             ]
         };
+#pragma warning restore CA1861 // Avoid constant arrays as arguments
 
         public static IEnumerable<Stone> All
             => [Basalt, Granite, Marble];
