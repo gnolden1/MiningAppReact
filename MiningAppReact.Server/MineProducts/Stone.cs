@@ -50,5 +50,7 @@ namespace MiningAppReact.Server.MineProducts {
             => [Basalt, Granite, Marble];
     }
 
-    public class Stone : NonGemstone { }
+    public class Stone : NonGemstone {
+        public override string ProductTypeName => "Stone";
+    }
 }

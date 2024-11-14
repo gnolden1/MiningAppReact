@@ -92,5 +92,7 @@ namespace MiningAppReact.Server.MineProducts {
             => [Adamantine, Copper, Gold, Iron, Lead, Mithril, Platinum, Silver, Tin, Zinc];
     }
 
-    public class Metal : NonGemstone { } 
+    public class Metal : NonGemstone {
+        public override string ProductTypeName => "Metal";
+    } 
 }

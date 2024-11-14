@@ -59,6 +59,8 @@ namespace MiningAppReact.Server.MineProducts {
     public class Gemstone : MineProduct {
         public required GemstoneGroup Group { get; init; }
 
+        public override string ProductTypeName => "Gemstone";
+
         public Currency Value => Group.GetValue();
         public DiceRoll GetDiceRoll(int quality) => Group.GetDiceRoll(quality);
     }

@@ -3,8 +3,9 @@ using System.Diagnostics.Metrics;
 using System.Xml.Linq;
 
 namespace MiningAppReact.Server.MineProducts {
-    public class MineProduct {
+    public abstract class MineProduct {
         public required string Name { get; init; }
+        public abstract string ProductTypeName { get; }
 
         public static IEnumerable<MineProduct> All
         {

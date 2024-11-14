@@ -34,5 +34,7 @@ namespace MiningAppReact.Server.MineProducts {
             => [Coal, Petroleum, RadioActiveMaterials];
     }
 
-    public class ExoticMaterial : NonGemstone { }
+    public class ExoticMaterial : NonGemstone {
+        public override string ProductTypeName => "Exotic Material";
+    }
 }

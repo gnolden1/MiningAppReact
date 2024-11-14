@@ -46,7 +46,7 @@ export default defineConfig({
             '^/weatherforecast': {
                 target,
                 secure: false
-            }
+            },
         },
         port: 5000,
         https: {
